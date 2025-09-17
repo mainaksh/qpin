@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Qpin Systems' elite team shaping quantum supremacy. Explore careers in quantum physics, fabrication, software, and sustainability with competitive salaries and perks.">
+    <title>Careers | Qpin Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #0056b3;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            flex: 0 0 auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+        header {
+            position: relative;
+            height: 60vh;
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1920x600?text=Careers');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+        }
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 20px;
+            margin: 15px 0;
+            max-width: 800px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            margin: 20px 0;
+        }
+        .careers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .career-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .career-item h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .career-item .role-details {
+            font-size: 16px;
+        }
+        .career-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+        .partners {
+            background-color: #e6f7ff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .partners h2 {
+            color: #0056b3;
+            font-size: 28px;
+        }
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .partner-logos img {
+            height: 50px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        .partner-logos img:hover {
+            filter: grayscale(0%);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #e6f7ff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            nav ul li a {
+                min-width: 80px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 32px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .career-item {
+                padding: 15px;
+            }
+            .career-item h3 {
+                font-size: 18px;
+            }
+            .career-item .role-details, .career-item ul {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Dell/Downloads/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/our-vision.html">Our Vision</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/quantum-technology.html">Quantum Technology</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/applications.html">Applications</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/investment-opportunity.html">Investment Opportunity</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/our-team.html">Our Team</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/partnerships.html">Partnerships</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/timeline-milestones.html">Timeline & Milestones</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/impact-sustainability.html">Impact & Sustainability</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/news-updates.html">News & Updates</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/careers.html">Careers</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/contact.html">Contact</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/investor-portal.html">Investor Portal</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Careers: Join the Quantum Singularity</h1>
+        <p>Be part of Qpin Systems' elite team pioneering the 100-qubit FTQC with ≥50 Algorithmic Qubits, scaling to 100,000 qubits by 2040. Competitive salaries, equity, and global impact await.</p>
+    </header>
+
+    <section class="content">
+        <h2>Why Join Qpin Systems?</h2>
+        <p>Qpin Systems, led by Mainaksh Singh, is revolutionizing quantum computing with our fluxonium-based FTQC. As we scale from 100 qubits (Quantum Volume ≥ 2^20, AQu ≥ 50) by 2028 to 100,000 qubits by 2040, we're building a world-class team to drive trillion-dollar innovations in medicine, energy, and sustainability. Join us to work with global experts from MIT, Caltech, and Harvard, and shape the quantum future.</p>
+        <div class="highlight">
+            <strong>Our Perks:</strong> Competitive USD salaries, equity options, comprehensive health insurance, remote/hybrid work, professional development (conferences, training), relocation assistance, and impact-driven culture with UN SDG alignment.
+        </div>
+
+        <h2>Open Positions</h2>
+        <p>We are hiring 50+ experts to accelerate our roadmap. Salaries are market-leading for quantum startups, based on San Francisco Bay Area standards (adjusted for location). Apply via the contact form or email careers@qpinsystems.com.</p>
+        <div class="careers-grid">
+            <div class="career-item">
+                <h3>Project Manager (2 Positions)</h3>
+                <div class="role-details">Salary: $150,000 - $200,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Master's in Engineering/Project Management or related field.</li>
+                    <li><strong>Experience:</strong> 8+ years in high-tech projects, preferably quantum or semiconductor.</li>
+                    <li><strong>Responsibilities:</strong> Oversee timelines for 100-qubit FTQC development, manage ₹3,000 Crore Phase 1 budget.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Fabrication Specialist (5 Positions)</h3>
+                <div class="role-details">Salary: $140,000 - $180,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Ph.D. in Nanotechnology/Materials Science.</li>
+                    <li><strong>Experience:</strong> 5+ years in wafer-scale fabrication, EBL processes.</li>
+                    <li><strong>Responsibilities:</strong> Lead 300 mm wafer-scale production with EBL < 5 nm, ensure JJ uniformity σ/μ ≤ 1.5% for fluxonium qubits.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Cryogenic Engineer (4 Positions)</h3>
+                <div class="role-details">Salary: $130,000 - $170,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Ph.D. in Low-Temperature Physics or Engineering.</li>
+                    <li><strong>Experience:</strong> 6+ years in dilution refrigerators and cryo-CMOS systems.</li>
+                    <li><strong>Responsibilities:</strong> Design cryo-CMOS for 10x wiring reduction, achieve T1 ≥ 1 ms coherence in FTQC operations.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Quantum Software Developer (6 Positions)</h3>
+                <div class="role-details">Salary: $160,000 - $220,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Master's/Ph.D. in Computer Science/Quantum Information.</li>
+                    <li><strong>Experience:</strong> 5+ years in quantum algorithms, Python/Qiskit proficiency.</li>
+                    <li><strong>Responsibilities:</strong> Develop QLDPC decoding via GraphQEC/Astra (<500 μs latency), hybrid classical-quantum workflows for VQE simulations.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Quantum Physicist (8 Positions)</h3>
+                <div class="role-details">Salary: $170,000 - $230,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Ph.D. in Quantum Physics or related field.</li>
+                    <li><strong>Experience:</strong> 7+ years in superconducting qubits, error correction.</li>
+                    <li><strong>Responsibilities:</strong> Optimize qubit design (EJ/EC = 5-20, EJ/EL = 20-100), achieve 1Q gate fidelity ≥ 99.998% and p_L < 1e-6 with d=7 QLDPC/4D codes.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Biotech Specialist (5 Positions)</h3>
+                <div class="role-details">Salary: $140,000 - $190,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Ph.D. in Biotechnology/Computational Biology.</li>
+                    <li><strong>Experience:</strong> 5+ years in molecular simulations, quantum chemistry.</li>
+                    <li><strong>Responsibilities:</strong> Apply quantum algorithms to protein folding, enzyme evolution for river cleanup and hyper-yield seeds.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Environmental Engineer (4 Positions)</h3>
+                <div class="role-details">Salary: $120,000 - $160,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Master's/Ph.D. in Environmental Engineering/Sustainability.</li>
+                    <li><strong>Experience:</strong> 6+ years in climate modeling, renewable energy systems.</li>
+                    <li><strong>Responsibilities:</strong> Lead quantum simulations for artificial leaves, carbon sequestration, and green hydrogen production.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Data Scientist / Quantum ML Engineer (6 Positions)</h3>
+                <div class="role-details">Salary: $150,000 - $210,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Ph.D. in Data Science/Machine Learning with quantum focus.</li>
+                    <li><strong>Experience:</strong> 5+ years in quantum machine learning, TensorFlow/PyTorch.</li>
+                    <li><strong>Responsibilities:</strong> Develop quantum-enhanced ML for predictive analytics in fusion plasma and climate modeling.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Business Development Manager (3 Positions)</h3>
+                <div class="role-details">Salary: $130,000 - $180,000 USD/year + Commission</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Master's in Business/Engineering.</li>
+                    <li><strong>Experience:</strong> 7+ years in tech sales, preferably quantum or cleantech.</li>
+                    <li><strong>Responsibilities:</strong> Secure partnerships for FTQC applications in pharma, energy, and sustainability sectors.</li>
+                </ul>
+            </div>
+            <div class="career-item">
+                <h3>Administrative Coordinator (2 Positions)</h3>
+                <div class="role-details">Salary: $80,000 - $110,000 USD/year</div>
+                <ul>
+                    <li><strong>Qualifications:</strong> Bachelor's in Business Administration.</li>
+                    <li><strong>Experience:</strong> 3+ years in project coordination, tech startups.</li>
+                    <li><strong>Responsibilities:</strong> Support operations, HR, and investor relations for the ₹30,000 Crore scaling vision.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="highlight">
+            <strong>Market Standards:</strong> Salaries are competitive with Bay Area quantum startups (e.g., Rigetti, PsiQuantum), including equity (0.1-1% vesting), 401(k) matching, unlimited PTO, and conference funding. Total compensation: $200k-$300k+ for senior roles.
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Our Partner Institutions</h2>
+        <p>Join a team collaborating with leading quantum research institutes for unparalleled opportunities.</p>
+        <div class="partner-logos">
+            <!-- Note: Local file paths are used as requested. For production, upload these images to your web server (e.g., /assets/images/) or a CDN and update the src attributes accordingly. Example: src="/assets/images/mit_logo.png" -->
+            <img src="file:///C:/Users/Dell/Downloads/mit_logo.png" alt="MIT Logo">
+            <img src="file:///C:/Users/Dell/Downloads/caltech_logo.png" alt="Caltech Logo">
+            <img src="file:///C:/Users/Dell/Downloads/harvard_logo.png" alt="Harvard Logo">
+            <img src="file:///C:/Users/Dell/Downloads/waterloo_logo.png" alt="Waterloo Logo">
+            <img src="file:///C:/Users/Dell/Downloads/ethzurich_logo.png" alt="ETH Zurich Logo">
+            <img src="file:///C:/Users/Dell/Downloads/oxford_logo.png" alt="Oxford Logo">
+            <img src="file:///C:/Users/Dell/Downloads/stanford_logo.png" alt="Stanford Logo">
+            <img src="file:///C:/Users/Dell/Downloads/maryland_logo.png" alt="Maryland Logo">
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="file:///C:/Users/Dell/Downloads/contact.html" class="cta-button">Apply Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qpin Systems. All rights reserved. | <a href="file:///C:/Users/Dell/Downloads/contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

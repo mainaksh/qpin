@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Qpin Systems' quantum computing applications, from quantum medicines to nuclear fusion and artificial leaves, driving trillion-dollar markets by 2040.">
+    <title>Applications | Qpin Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #0056b3;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            flex: 0 0 auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+        header {
+            position: relative;
+            height: 60vh;
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1920x600?text=Quantum+Applications');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+        }
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 20px;
+            margin: 15px 0;
+            max-width: 800px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            margin: 20px 0;
+        }
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .application-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .application-item h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .application-item p {
+            font-size: 16px;
+        }
+        .partners {
+            background-color: #e6f7ff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .partners h2 {
+            color: #0056b3;
+            font-size: 28px;
+        }
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .partner-logos img {
+            height: 50px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        .partner-logos img:hover {
+            filter: grayscale(0%);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #e6f7ff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            nav ul li a {
+                min-width: 80px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 32px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .application-item {
+                padding: 15px;
+            }
+            .application-item h3 {
+                font-size: 18px;
+            }
+            .application-item p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Dell/Downloads/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/our-vision.html">Our Vision</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/quantum-technology.html">Quantum Technology</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/applications.html">Applications</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/investment-opportunity.html">Investment Opportunity</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/our-team.html">Our Team</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/partnerships.html">Partnerships</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/timeline-milestones.html">Timeline & Milestones</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/impact-sustainability.html">Impact & Sustainability</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/news-updates.html">News & Updates</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/careers.html">Careers</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/contact.html">Contact</a></li>
+            <li><a href="file:///C:/Users/Dell/Downloads/investor-portal.html">Investor Portal</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Applications: Transforming the Future</h1>
+        <p>From quantum medicines to artificial leaves and nuclear fusion, Qpin Systems’ FTQC unlocks trillion-dollar markets, scaling from 100 qubits to 100,000 by 2040.</p>
+    </header>
+
+    <section class="content">
+        <h2>Revolutionary Applications</h2>
+        <p>Qpin Systems’ 100-qubit fluxonium-based Fault-Tolerant Quantum Computer (FTQC), with ≥50 Algorithmic Qubits (AQu), is the genesis of a quantum singularity. By scaling to 500 qubits by 2030, 10,000+ by 2035, and 100,000 by 2040, we will unleash exascale computations that transform industries and restore our planet. Our applications target trillion-dollar markets, delivering exponential value for investors and humanity.</p>
+        <div class="highlight">
+            <strong>Why Invest?</strong> Our quantum applications tap into a $1 Trillion+ quantum market by 2035 and a $500B+ bio-environmental convergence, offering 50x returns through patents and first-mover dominance.
+        </div>
+
+        <h2>Our Quantum-Powered Future</h2>
+        <div class="applications-grid">
+            <div class="application-item">
+                <h3>Quantum Medicines Odyssey</h3>
+                <p>Simulate protein folding and drug-receptor interactions at unprecedented speeds, slashing discovery timelines from decades to days. Unlocks a $3.4 Billion quantum pharma market by 2032.</p>
+            </div>
+            <div class="application-item">
+                <h3>Materials Metamorphosis</h3>
+                <p>Forge novel superconductors and self-healing composites via quantum alchemy, tapping a $28-72 Billion materials market by 2035.</p>
+            </div>
+            <div class="application-item">
+                <h3>EV Battery Quantum Leap</h3>
+                <p>Optimize ultra-dense, fast-charging batteries for 1,000-mile-range EVs, revolutionizing the $500 Billion+ EV ecosystem.</p>
+            </div>
+            <div class="application-item">
+                <h3>Nuclear Fusion Nebula</h3>
+                <p>Model plasma dynamics with god-like fidelity to achieve ignition, powering the $40 Trillion fusion frontier by 2050.</p>
+            </div>
+            <div class="application-item">
+                <h3>Quantum Nitrogen Nexus & Artificial Leaf</h3>
+                <p>Engineer artificial leaves to convert CO2 into fuels, birthing a $200 Million+ photosynthesis market by 2030 and enabling carbon-negative utopias.</p>
+            </div>
+            <div class="application-item">
+                <h3>Bio-Quantum Harvest Revolution</h3>
+                <p>Develop hyper-yield seeds to boost agriculture output by 50%+, capturing the $212 Billion ag-biotech market by 2030.</p>
+            </div>
+            <div class="application-item">
+                <h3>Enzyme Elixir for Aquatic Resurrection</h3>
+                <p>Create quantum-evolved enzymes to clean rivers like the Ganges and produce green hydrogen, targeting $500 Million water remediation and $30 Billion hydrogen markets by 2030.</p>
+            </div>
+            <div class="application-item">
+                <h3>AI Singularity Forge</h3>
+                <p>Turbocharge exaflop neural hybrids for sentient algorithms in logistics and cybersecurity, tapping the $15 Trillion AI market by 2030.</p>
+            </div>
+            <div class="application-item">
+                <h3>Climate Cosmos Guardian</h3>
+                <p>Hyper-optimize carbon sequestration and geoengineering, driving a $10 Trillion green renaissance by 2040.</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <strong>Scalability Impact:</strong> From 100 qubits with ≥50 AQu in 2028 to 100,000 qubits by 2040, Qpin’s applications will generate trillions in socio-economic value, fueled by ₹30,000 Crore in phased investments.
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Our Global Quantum Alliances</h2>
+        <p>Collaborating with the world’s leading quantum research institutes to accelerate our path to 100,000 qubits.</p>
+        <div class="partner-logos">
+            <!-- Note: Local file paths are used as requested. For production, upload these images to your web server (e.g., /assets/images/) or a CDN and update the src attributes accordingly. Example: src="/assets/images/mit_logo.png" -->
+            <img src="file:///C:/Users/Dell/Downloads/mit_logo.png" alt="MIT Logo">
+            <img src="file:///C:/Users/Dell/Downloads/caltech_logo.png" alt="Caltech Logo">
+            <img src="file:///C:/Users/Dell/Downloads/harvard_logo.png" alt="Harvard Logo">
+            <img src="file:///C:/Users/Dell/Downloads/waterloo_logo.png" alt="Waterloo Logo">
+            <img src="file:///C:/Users/Dell/Downloads/ethzurich_logo.png" alt="ETH Zurich Logo">
+            <img src="file:///C:/Users/Dell/Downloads/oxford_logo.png" alt="Oxford Logo">
+            <img src="file:///C:/Users/Dell/Downloads/stanford_logo.png" alt="Stanford Logo">
+            <img src="file:///C:/Users/Dell/Downloads/maryland_logo.png" alt="Maryland Logo">
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="file:///C:/Users/Dell/Downloads/investment-opportunity.html" class="cta-button">Invest in Quantum Applications</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qpin Systems. All rights reserved. | <a href="file:///C:/Users/Dell/Downloads/contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
