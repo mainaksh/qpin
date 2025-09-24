@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Qpin Systems' global impact through quantum-powered sustainability, from artificial leaves to green hydrogen, transforming the planet by 2040.">
+    <title>Impact & Sustainability | Qpin Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #0056b3;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            flex: 0 0 auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+        header {
+            position: relative;
+            height: 60vh;
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1920x600?text=Impact+Sustainability');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+        }
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 20px;
+            margin: 15px 0;
+            max-width: 800px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            margin: 20px 0;
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .impact-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .impact-item h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .impact-item p {
+            font-size: 16px;
+        }
+        .partners {
+            background-color: #e6f7ff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .partners h2 {
+            color: #0056b3;
+            font-size: 28px;
+        }
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .partner-logos img {
+            height: 50px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        .partner-logos img:hover {
+            filter: grayscale(0%);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #e6f7ff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            nav ul li a {
+                min-width: 80px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 32px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .impact-item {
+                padding: 15px;
+            }
+            .impact-item h3 {
+                font-size: 18px;
+            }
+            .impact-item p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-vision.html">Our Vision</a></li>
+            <li><a href="quantum-technology.html">Quantum Technology</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="investment-opportunity.html">Investment Opportunity</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="timeline-milestones.html">Timeline & Milestones</a></li>
+            <li><a href="impact-sustainability.html">Impact & Sustainability</a></li>
+            <li><a href="news-updates.html">News & Updates</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="investor-portal.html">Investor Portal</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Impact & Sustainability: Quantum-Powered Planetary Renaissance</h1>
+        <p>Qpin Systems’ FTQC, scaling from 100 qubits with ≥50 AQu to 100,000 by 2040, forges a carbon-negative cosmos, feeding billions and fueling a sustainable future.</p>
+    </header>
+
+    <section class="content">
+        <h2>Global Impact Through Quantum Innovation</h2>
+        <p>Qpin Systems harnesses our 100-qubit fluxonium-based Fault-Tolerant Quantum Computer (FTQC) with ≥50 Algorithmic Qubits (AQu) to catalyze a global sustainability revolution. By scaling to 100,000 qubits by 2040 with ₹30,000 Crore in phased funding, we unleash exascale quantum simulations to address humanity’s greatest challenges—climate change, food security, and clean energy. Our solutions align with UN Sustainable Development Goals (Zero Hunger, Clean Water, Climate Action), delivering a $10T+ green economy by 2040.</p>
+        <div class="highlight">
+            <strong>Futuristic Vision:</strong> Our quantum alchemy transforms CO2 into fuel, purifies rivers, and feeds billions, creating a verdant planet while unlocking trillion-dollar markets for investors.
+        </div>
+
+        <h2>Sustainability Applications</h2>
+        <div class="impact-grid">
+            <div class="impact-item">
+                <h3>Quantum Nitrogen Nexus & Artificial Leaf Genesis</h3>
+                <p>Decoding nitrogen fixation and photosynthesis via variational quantum eigensolvers (VQE), we engineer artificial leaves to transmute CO2 into fuels and oxygen at solar efficiencies. Targets a $200M+ artificial photosynthesis market by 2030, reducing global carbon emissions by 10% by 2040, in collaboration with Harvard’s Quantum Initiative.</p>
+            </div>
+            <div class="impact-item">
+                <h3>Bio-Quantum Harvest Revolution</h3>
+                <p>Quantum-optimized genetic algorithms develop hyper-yield seeds resilient to droughts and poor soils, boosting global agricultural output by 50%+. Captures a $212B ag-biotech market by 2030, addressing UN SDG 2 (Zero Hunger) with Waterloo’s algorithmic expertise.</p>
+            </div>
+            <div class="impact-item">
+                <h3>Enzyme Elixir for Aquatic Resurrection</h3>
+                <p>Quantum-evolved enzymes purify rivers like the Ganges by degrading pollutants 100x faster than classical methods, while splitting water into green hydrogen. Targets $500M water remediation and $30B hydrogen markets by 2030, aligning with UN SDG 6 (Clean Water) via Oxford’s quantum simulations.</p>
+            </div>
+            <div class="impact-item">
+                <h3>Climate Cosmos Guardian</h3>
+                <p>Quantum climate cartography optimizes carbon sequestration and geoengineering, modeling atmospheric dynamics with exascale precision. Drives a $10T green economy by 2040, achieving UN SDG 13 (Climate Action) with MIT’s quantum algorithm support.</p>
+            </div>
+            <div class="impact-item">
+                <h3>Nuclear Fusion Nebula</h3>
+                <p>Quantum simulations of plasma dynamics unlock fusion ignition in stellarators, delivering boundless clean energy. Targets a $40T fusion market by 2050, reducing global reliance on fossil fuels, backed by Caltech’s quantum information expertise.</p>
+            </div>
+            <div class="impact-item">
+                <h3>EV Battery Quantum Leap</h3>
+                <p>Quantum-optimized cathode and electrolyte designs yield ultra-dense, fast-charging batteries for 1,000-mile-range EVs. Captures a $500B+ EV market, aligning with sustainable transport goals, supported by ETH Zurich’s superconducting research.</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <strong>Global Reach:</strong> Our quantum solutions impact billions across continents, from Asia’s rivers to Africa’s farmlands, delivering a carbon-negative future and 50x+ ROI for investors.
+        </div>
+
+        <h2>Alignment with Global Goals</h2>
+        <p>Our FTQC, with T1 ≥ 1 ms, 1Q gate fidelity ≥ 99.998%, and p_L < 1e-6 using d=7 QLDPC/4D codes, enables exascale simulations for sustainability. Backed by partnerships with MIT, Caltech, Harvard, Waterloo, ETH Zurich, Oxford, Stanford, and Maryland, we align with:
+            <ul>
+                <li><strong>UN SDG 2 (Zero Hunger):</strong> Hyper-yield seeds feed billions, reducing global hunger by 30% by 2035.</li>
+                <li><strong>UN SDG 6 (Clean Water):</strong> Enzyme-based river cleanup restores 1,000+ water bodies by 2035.</li>
+                <li><strong>UN SDG 7 (Affordable and Clean Energy):</strong> Green hydrogen and fusion power a $70T+ clean energy market.</li>
+                <li><strong>UN SDG 13 (Climate Action):</strong> Artificial leaves and climate modeling cut CO2 emissions by 10% by 2040.</li>
+            </ul>
+        </p>
+        <div class="highlight">
+            <strong>Investor Legacy:</strong> Your investment in Qpin’s ₹3,000 Crore initial phase fuels a planetary renaissance, yielding eternal dividends in a $10T+ green economy by 2040.
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Our Partner Institutions</h2>
+        <p>Collaborating with leading quantum research institutes to drive sustainable impact.</p>
+        <div class="partner-logos">
+            <!-- Note: Local file paths are used as requested. For production, upload these images to your web server (e.g., /assets/images/) or a CDN and update the src attributes accordingly. Example: src="/assets/images/mit_logo.png" -->
+            <img src="mit_logo.png" alt="MIT Logo">
+            <img src="caltech_logo.png" alt="Caltech Logo">
+            <img src="harvard_logo.png" alt="Harvard Logo">
+            <img src="waterloo_logo.png" alt="Waterloo Logo">
+            <img src="ethzurich_logo.png" alt="ETH Zurich Logo">
+            <img src="oxford_logo.png" alt="Oxford Logo">
+            <img src="stanford_logo.png" alt="Stanford Logo">
+            <img src="maryland_logo.png" alt="Maryland Logo">
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="investment-opportunity.html" class="cta-button">Invest in a Sustainable Future</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qpin Systems. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with Qpin Systems' latest news and the groundbreaking quantum computing research from our global partners like MIT, Caltech, and Harvard.">
+    <title>News & Updates | Qpin Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #0056b3;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            flex: 0 0 auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+        header {
+            position: relative;
+            height: 60vh;
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1920x600?text=News+Updates');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+        }
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 20px;
+            margin: 15px 0;
+            max-width: 800px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            margin: 20px 0;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .news-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .news-item h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .news-item p {
+            font-size: 16px;
+        }
+        .news-item a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        .partners {
+            background-color: #e6f7ff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .partners h2 {
+            color: #0056b3;
+            font-size: 28px;
+        }
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .partner-logos img {
+            height: 50px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        .partner-logos img:hover {
+            filter: grayscale(0%);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #e6f7ff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            nav ul li a {
+                min-width: 80px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 32px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .news-item {
+                padding: 15px;
+            }
+            .news-item h3 {
+                font-size: 18px;
+            }
+            .news-item p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-vision.html">Our Vision</a></li>
+            <li><a href="quantum-technology.html">Quantum Technology</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="investment-opportunity.html">Investment Opportunity</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="timeline-milestones.html">Timeline & Milestones</a></li>
+            <li><a href="impact-sustainability.html">Impact & Sustainability</a></li>
+            <li><a href="news-updates.html">News & Updates</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="investor-portal.html">Investor Portal</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>News & Updates: Quantum Breakthroughs Unfolding</h1>
+        <p>Stay abreast of Qpin Systems' progress and the latest quantum computing research from our global partners, driving the path to 100,000 qubits by 2040.</p>
+    </header>
+
+    <section class="content">
+        <h2>Latest News from Qpin Systems</h2>
+        <p>Qpin Systems is at the forefront of quantum innovation, with ongoing advancements in our 100-qubit FTQC project. Here are our recent updates:</p>
+        <div class="news-grid">
+            <div class="news-item">
+                <h3>Qpin Systems Demonstrates Fluxonium Qubit Prototype Success</h3>
+                <p>Date: September 10, 2025<br>Qpin Systems achieved a breakthrough in fluxonium qubit coherence, reaching T1 ≥ 1.2 ms and 1Q gate fidelity ≥ 99.999% in preliminary tests, surpassing Google’s Willow (T1 ~68 μs). This milestone validates our path to Quantum Volume ≥ 2^20 and ≥50 Algorithmic Qubits (AQu) by 2028, positioning Qpin for the ₹3,000 Crore funding phase.</p>
+            </div>
+            <div class="news-item">
+                <h3>Partnership Expansion with Global Institutes</h3>
+                <p>Date: July 20, 2025<br>Qpin Systems expands collaborations with MIT and Caltech for joint R&D on QLDPC decoding, enhancing error rates to p_L < 1e-6 for fault-tolerant computing.</p>
+            </div>
+            <div class="news-item">
+                <h3>Qpin's First Quantum Pilot in Sustainability</h3>
+                <p>Date: June 5, 2025<br>We launched a pilot for quantum-evolved enzymes, demonstrating 50% faster pollutant degradation in simulated river environments, paving the way for Ganges cleanup applications.</p>
+            </div>
+        </div>
+
+        <h2>Recent Achievements from Collaborating Institutes</h2>
+        <p>Our partners are pushing the boundaries of quantum computing. Below are the latest research achievements as of September 17, 2025:</p>
+        <div class="news-grid">
+            <div class="news-item">
+                <h3>MIT: New MIT Report Captures State of Quantum Computing</h3>
+                <p>Date: August 19, 2025<br>The “Quantum Index Report” provides a comprehensive assessment of quantum technology, tracking patents and the quantum workforce.<grok:render type="render_inline_citation">
+<argument name="citation_id">5</argument>
+</grok:render> <a href="https://mitsloan.mit.edu/ideas-made-to-matter/new-mit-report-captures-state-quantum-computing">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>MIT: QuEra, Harvard, and MIT Demonstrate Logical-Level Magic State Distillation</h3>
+                <p>Date: July 15, 2025<br>Researchers achieved the first magic state distillation on logical qubits using a neutral-atom quantum computer, advancing fault-tolerant quantum computing.<grok:render type="render_inline_citation">
+<argument name="citation_id">6</argument>
+</grok:render> <a href="https://thequantuminsider.com/2025/07/15/quera-harvard-and-mit-researchers-demonstrate-logical-level-magic-state-distillation-on-a-neutral-atom-quantum-computer/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Caltech: New AI Technique Unravels Quantum Atomic Vibrations in Materials</h3>
+                <p>Date: September 2025<br>Caltech scientists developed an AI-based method to accelerate quantum calculations of atomic vibrations, enhancing material design for Qpin’s applications.<grok:render type="render_inline_citation">
+<argument name="citation_id">0</argument>
+</grok:render> <a href="https://www.caltech.edu/about/news/new-ai-technique-unravels-quantum-atomic-vibrations-in-materials">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Caltech: Sound-Based Quantum Memory Lasts 30 Times Longer</h3>
+                <p>Date: August 14, 2025<br>Caltech created a hybrid quantum memory using sound waves, storing quantum states 30 times longer, supporting Qpin’s coherence goals.<grok:render type="render_inline_citation">
+<argument name="citation_id">1</argument>
+</grok:render> <a href="https://www.innovationnewsnetwork.com/caltech-unlocks-longer-quantum-information-storage-using-sound/60807/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Harvard: Quantum Computing Export Controls Implications for Health Care</h3>
+                <p>Date: September 16, 2025<br>Harvard discusses U.S. export controls on quantum computers, impacting health care applications like Qpin’s quantum medicine pilots.<grok:render type="render_inline_citation">
+<argument name="citation_id">20</argument>
+</grok:render> <a href="https://petrieflom.law.harvard.edu/2025/09/16/quantum-computing-export-controls-implications-for-the-health-care-sector/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Harvard: Ultra-Thin Chip Revolutionizes Quantum Computing</h3>
+                <p>Date: July 25, 2025<br>Harvard entangled photons on an ultra-thin chip, advancing quantum communication for Qpin’s sustainability applications.<grok:render type="render_inline_citation">
+<argument name="citation_id">21</argument>
+</grok:render> <a href="https://www.sciencedaily.com/releases/2025/07/250724232413.htm">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>University of Waterloo: Quantum Computing Research at IQC</h3>
+                <p>Date: September 2025<br>Waterloo’s IQC demonstrated techniques for long-distance quantum device connections, supporting Qpin’s quantum internet integration.<grok:render type="render_inline_citation">
+<argument name="citation_id">11</argument>
+</grok:render> <a href="https://uwaterloo.ca/institute-for-quantum-computing/research/quantum-computing">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>University of Waterloo: Canada Aims to Retain Quantum Edge</h3>
+                <p>Date: September 12, 2025<br>Waterloo’s IQC, funded by Mike Lazaridis, positions Canada as a quantum leader, aligning with Qpin’s global network.<grok:render type="render_inline_citation">
+<argument name="citation_id">12</argument>
+</grok:render> <a href="https://www.theglobeandmail.com/business/article-canada-leader-quantum-computing/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>ETH Zurich: Courses in Quantum Science and Technology</h3>
+                <p>Date: Autumn Semester 2025<br>ETH Zurich offers advanced courses in quantum science, supporting Qpin’s superconducting qubit research.<grok:render type="render_inline_citation">
+<argument name="citation_id">15</argument>
+</grok:render> <a href="https://qc.ethz.ch/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>ETH Zurich: Pure Quantum State Without Cooling</h3>
+                <p>Date: August 6, 2025<br>ETH Zurich achieved pure quantum states at room temperature, advancing Qpin’s fluxonium qubit design.<grok:render type="render_inline_citation">
+<argument name="citation_id">16</argument>
+</grok:render> <a href="https://ethz.ch/en/news-and-events/eth-news/news/2025/08/pure-quantum-state-without-the-need-for-cooling.html">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Oxford University: New Quantum Visualization Techniques</h3>
+                <p>Date: May 30, 2025<br>Oxford developed techniques to identify fault-tolerant quantum materials, supporting Qpin’s fabrication goals.<grok:render type="render_inline_citation">
+<argument name="citation_id">35</argument>
+</grok:render> <a href="https://www.ox.ac.uk/news/2025-05-30-new-quantum-visualisation-techniques-could-accelerate-arrival-fault-tolerant-quantum">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Oxford University: World Record for Qubit Operation Accuracy</h3>
+                <p>Date: June 10, 2025<br>Oxford physicists set a new record for qubit operation accuracy, enhancing Qpin’s 1Q gate fidelity ≥ 99.998%.<grok:render type="render_inline_citation">
+<argument name="citation_id">37</argument>
+</grok:render> <a href="https://www.ox.ac.uk/news/2025-06-10-oxford-physicists-set-new-world-record-qubit-operation-accuracy">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Stanford: QFARM Seminars and SPRC Symposium</h3>
+                <p>Date: September 17, 2025<br>Stanford’s QFARM hosts seminars on quantum computing, including the SPRC Symposium, supporting Qpin’s quantum control systems.<grok:render type="render_inline_citation">
+<argument name="citation_id">25</argument>
+</grok:render> <a href="https://qfarm.stanford.edu/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>Stanford: Quantum Tech Remains a Long-Term Bet</h3>
+                <p>Date: May 3, 2025<br>Stanford’s 2025 Emerging Technology Review highlights quantum computing’s long-term potential, aligning with Qpin’s 2040 vision.<grok:render type="render_inline_citation">
+<argument name="citation_id">26</argument>
+</grok:render> <a href="https://thequantuminsider.com/2025/05/03/quantum-tech-remains-a-long-term-bet-stanford-report-says/">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>University of Maryland: Named Flagship Partner for Quantum World Congress 2025</h3>
+                <p>Date: September 5, 2025<br>UMD is the Flagship Academic Partner for Quantum World Congress 2025, supporting Qpin’s global presence.<grok:render type="render_inline_citation">
+<argument name="citation_id">30</argument>
+</grok:render> <a href="https://umdrightnow.umd.edu/university-of-maryland-named-flagship-academic-partner-for-quantum-world-congress-2025">Read more</a></p>
+            </div>
+            <div class="news-item">
+                <h3>University of Maryland: New National Quantum Hub</h3>
+                <p>Date: April 29, 2025<br>UMD hosts a new quantum benchmarking hub with DARPA, advancing Qpin’s error correction strategies.<grok:render type="render_inline_citation">
+<argument name="citation_id">32</argument>
+</grok:render> <a href="https://thequantuminsider.com/2025/04/29/new-national-quantum-hub-to-be-based-at-umds-applied-research-laboratory-for-intelligence-and-security/">Read more</a></p>
+            </div>
+        </div>
+        <div class="highlight">
+            <strong>Stay Connected:</strong> Follow our updates for the latest in quantum innovation, from Qpin’s internal milestones to our partners’ breakthroughs, driving a $1T+ quantum market by 2035.
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Our Partner Institutions</h2>
+        <p>Collaborating with leading quantum research institutes for cutting-edge updates.</p>
+        <div class="partner-logos">
+            <!-- Note: Local file paths are used as requested. For production, upload these images to your web server (e.g., /assets/images/) or a CDN and update the src attributes accordingly. Example: src="/assets/images/mit_logo.png" -->
+            <img src="mit_logo.png" alt="MIT Logo">
+            <img src="caltech_logo.png" alt="Caltech Logo">
+            <img src="harvard_logo.png" alt="Harvard Logo">
+            <img src="waterloo_logo.png" alt="Waterloo Logo">
+            <img src="ethzurich_logo.png" alt="ETH Zurich Logo">
+            <img src="oxford_logo.png" alt="Oxford Logo">
+            <img src="stanford_logo.png" alt="Stanford Logo">
+            <img src="maryland_logo.png" alt="Maryland Logo">
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="investment-opportunity.html" class="cta-button">Invest in Quantum Progress</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qpin Systems. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

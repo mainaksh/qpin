@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Access Qpin Systems' Investor Portal for exclusive financials, milestone trackers, and due diligence materials on our 100-qubit FTQC scaling to 100,000 qubits by 2040.">
+    <title>Investor Portal | Qpin Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #0056b3;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            flex: 0 0 auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+        header {
+            position: relative;
+            height: 60vh;
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1920x600?text=Investor+Portal');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+        }
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 20px;
+            margin: 15px 0;
+            max-width: 800px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            margin: 20px 0;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .login-form label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-form button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-form button:hover {
+            background-color: #218838;
+        }
+        .investor-content {
+            display: none; /* Hidden until login is implemented */
+            margin-top: 40px;
+        }
+        .funding-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .funding-table th, .funding-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .funding-table th {
+            background-color: #0056b3;
+            color: white;
+        }
+        .milestone-tracker {
+            margin: 20px 0;
+        }
+        .milestone-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .milestone-item h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .resources {
+            margin: 20px 0;
+        }
+        .resources a {
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .resources a:hover {
+            text-decoration: underline;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #e6f7ff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            nav ul li a {
+                min-width: 80px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 32px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .funding-table th, .funding-table td {
+                padding: 8px;
+                font-size: 14px;
+            }
+            .milestone-item h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <script>
+        // Placeholder login script (requires backend for actual authentication)
+        function handleLogin(event) {
+            event.preventDefault();
+            alert("Login submitted. For production, please implement secure authentication with multi-factor verification.");
+            // Show investor content (for demo purposes; in production, this requires server-side validation)
+            document.querySelector('.investor-content').style.display = 'block';
+            document.querySelector('.login-form').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-vision.html">Our Vision</a></li>
+            <li><a href="quantum-technology.html">Quantum Technology</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="investment-opportunity.html">Investment Opportunity</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="timeline-milestones.html">Timeline & Milestones</a></li>
+            <li><a href="impact-sustainability.html">Impact & Sustainability</a></li>
+            <li><a href="news-updates.html">News & Updates</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="investor-portal.html">Investor Portal</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Investor Portal: Unlock Exclusive Insights</h1>
+        <p>Access detailed financials, milestone trackers, and due diligence materials for Qpin Systems’ 100-qubit FTQC with ≥50 Algorithmic Qubits, scaling to 100,000 qubits by 2040.</p>
+    </header>
+
+    <section class="content">
+        <div class="login-form">
+            <h2>Investor Login</h2>
+            <p>Please log in to access exclusive investor materials. Contact info@qpin.in for credentials.</p>
+            <form onsubmit="handleLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="highlight">
+                <strong>Security Note:</strong> Our portal uses AES-256 encryption and multi-factor authentication (to be implemented) to protect sensitive investor data.
+            </div>
+        </div>
+
+        <div class="investor-content">
+            <h2>Investor Dashboard</h2>
+            <p>Welcome to Qpin Systems’ Investor Portal, your gateway to exclusive insights into our 100-qubit fluxonium-based FTQC project, achieving Quantum Volume ≥ 2^20 and ≥50 Algorithmic Qubits (AQu) by 2028. With an initial ₹3,000 Crore ($360M USD) investment, we’ll scale to 100,000 qubits by 2040, securing ₹30,000 Crore ($3.6B USD) to unlock trillion-dollar markets in quantum medicines, energy, and sustainability.</p>
+            <div class="highlight">
+                <strong>Your Investment Opportunity:</strong> Secure early equity in a $1T+ quantum market by 2035, with 50x+ ROI potential through patents and first-mover dominance.
+            </div>
+
+            <h2>Funding Breakdown</h2>
+            <p>Our initial ₹3,000 Crore ($360M USD) funding phase supports the 100-qubit FTQC, with milestone-driven follow-ons totaling ₹30,000 Crore ($3.6B USD) by 2040.</p>
+            <table class="funding-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount (₹ Crore / $M USD)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fabrication & Hardware</td>
+                        <td>1,200 / $144</td>
+                        <td>300 mm wafer-scale tools, EBL < 5 nm, JJ uniformity σ/μ ≤ 1.5%.</td>
+                    </tr>
+                    <tr>
+                        <td>Cryogenic Infrastructure</td>
+                        <td>800 / $96</td>
+                        <td>Dilution refrigerators, cryo-CMOS for 10x wiring reduction.</td>
+                    </tr>
+                    <tr>
+                        <td>R&D and Talent</td>
+                        <td>600 / $72</td>
+                        <td>QLDPC decoding, VQE algorithms, 50+ global experts.</td>
+                    </tr>
+                    <tr>
+                        <td>Testing & Pilots</td>
+                        <td>300 / $36</td>
+                        <td>Quantum Volume ≥ 2^20, AQu ≥ 50, bio-env pilots.</td>
+                    </tr>
+                    <tr>
+                        <td>Contingency & Overhead</td>
+                        <td>100 / $12</td>
+                        <td>Administrative support, risk mitigation.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Milestone Tracker</h2>
+            <p>Track our progress toward quantum supremacy, with key milestones validated by global partners (MIT, Caltech, Harvard, Waterloo, ETH Zurich, Oxford, Stanford, Maryland).</p>
+            <div class="milestone-tracker">
+                <div class="milestone-item">
+                    <h3>September 2025: Fluxonium Qubit Prototype</h3>
+                    <p>Status: Completed<br>Achieved T1 ≥ 1.2 ms, 1Q gate fidelity ≥ 99.999%, positioning Qpin for AQu ≥ 50 by 2028.</p>
+                </div>
+                <div class="milestone-item">
+                    <h3>2026: QLDPC Decoding Integration</h3>
+                    <p>Status: In Progress<br>Implementing d=7 QLDPC/4D codes for p_L < 1e-6 with GraphQEC/Astra (<500 μs latency).</p>
+                </div>
+                <div class="milestone-item">
+                    <h3>2027: Pilot Demos</h3>
+                    <p>Status: Planned<br>Launch quantum medicine and sustainability pilots, targeting Quantum Volume ≥ 2^15.</p>
+                </div>
+                <div class="milestone-item">
+                    <h3>2028: 100-Qubit FTQC</h3>
+                    <p>Status: Planned<br>Achieve Quantum Volume ≥ 2^20, AQu ≥ 50, with commercial demos in pharma and green tech.</p>
+                </div>
+            </div>
+
+            <h2>Market Projections and ROI</h2>
+            <p>Quantum computing is projected to reach $7.3B by 2030 (34.6% CAGR) and $100B+ by 2040. Qpin targets a $500B+ convergence in:</p>
+            <ul>
+                <li><strong>Pharma:</strong> $1.36B quantum drug discovery by 2034 via royalties.</li>
+                <li><strong>Energy & Materials:</strong> $72B materials, $500B EV, $40T fusion markets.</li>
+                <li><strong>Sustainability:</strong> $200M+ artificial photosynthesis, $212B ag-biotech, $30B green hydrogen by 2030.</li>
+                <li><strong>ROI:</strong> 50x+ returns via equity (0.5-5% stakes), IP licensing, and market leadership.</li>
+            </ul>
+            <div class="highlight">
+                <strong>Investment Structure:</strong> Equity, convertible notes, or CSR grants for Indian investors; VC-style for global funds. Contact info@qpin.in for term sheets.
+            </div>
+
+            <h2>Resources</h2>
+            <p>Access exclusive materials (available post-login):</p>
+            <div class="resources">
+                <a href="#">Qpin FTQC Whitepaper: Fluxonium Architecture and AQu ≥ 50</a>
+                <a href="#">Financial Projections: ₹30,000 Crore Roadmap to 2040</a>
+                <a href="#">Due Diligence Report: Partnerships and IP Portfolio</a>
+                <a href="#">Term Sheet Template: Equity and Convertible Notes</a>
+            </div>
+            <div class="highlight">
+                <strong>Investor Perk:</strong> Early investors gain access to co-innovation opportunities with MIT, Caltech, and Harvard, plus priority IP licensing rights.
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="contact.html" class="cta-button">Contact for Investment Details</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qpin Systems. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
